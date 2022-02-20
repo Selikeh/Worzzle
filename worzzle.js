@@ -1,4 +1,15 @@
-let word = 'sabre'
+let wrdArray = ["sabre", "apple", "mango", "whose", "blame", "crazy", "pilot","scare", 'claim']
+
+let referenceDate = new Date("02/17/2022")
+
+let currentDate = Date.now()
+
+let timeDifference = currentDate- referenceDate
+
+console.log(Math.floor(timeDifference/(1000 * 3600 * 24)))
+let numberOfDays = Math.floor(timeDifference/(1000 * 3600 * 24))
+
+let word = wrdArray[numberOfDays]
 // const box = document.getElementById('box')
 // const check = document.getElementById('check')
 // let output = ""
@@ -69,7 +80,10 @@ for (let id = 0; id < tries; id++){
         if (e.target.value !== '' && e.target.value.length >= 1 && boxes.indexOf(e.target) < boxes.length-1){
 
                 console.log(boxes.indexOf(e.target))
-                if(e.key !== 32){
+                if(e.target.value == " "){
+                    e.target.value = ""
+                    e.target.focus()
+                }else{
                     boxes[boxes.indexOf(e.target)+1].focus()
                 }
             }
