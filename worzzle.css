@@ -1,0 +1,19 @@
+#r1{
+    display: flex;
+}
+
+input{
+    caret-color: transparent;
+    text-align: center;
+}
+
+input{
+    width: 24px;
+    height: 24px;
+    margin: 24px;
+    border: 5px solid black;
+}
+
+input:focus{
+    outline: none;
+}
