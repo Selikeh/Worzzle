@@ -1,4 +1,4 @@
-let wrdArray = ["sabre", "apple", "mango", "whose", "blame", "crazy", "pilot","scare", 'claim']
+let wrdArray = ["sabre", "apple", "mango", "whose", "blame", "crazy", "pilot","scare", "claim", "spear", "mouse", "aroma", "graze", "clear", "whirl"]
 
 let referenceDate = new Date("02/17/2022")
 
